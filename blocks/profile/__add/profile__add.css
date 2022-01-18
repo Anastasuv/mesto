@@ -1,4 +1,4 @@
-.profile__add_btn {
+.profile__add {
     display: flex;
     background-image: url(/images/Vecto03r.png);
     background-repeat: no-repeat;
@@ -11,13 +11,13 @@
     padding: 0;
     background-position: center;
 }
-.profile__add_btn:hover{
+.profile__add:hover{
     opacity: 0.6;
     cursor: pointer;
     transition: 1.2s;
 }
 @media screen and (max-width:611px){
-    .profile__add_btn{
+    .profile__add{
         width: 100%;
     }
 }

@@ -1,4 +1,4 @@
-.profile__edit_btn {
+.profile__edit {
     border: 1px solid #FFFFFF;
     width: 24px;
     height: 24px;
@@ -9,7 +9,7 @@
     padding: 0;
     background-position: center;
 }
-.profile__edit_btn:hover{
+.profile__edit:hover{
     opacity: 0.6;
     cursor: pointer;
     transition: 1.2s;

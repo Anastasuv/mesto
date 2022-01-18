@@ -1,5 +1,5 @@
-let popupOpen = document.querySelector('.profile__edit_btn'),
-    popupClose = document.querySelector('.popup__container_close'),
+let popupOpen = document.querySelector('.profile__edit'),
+    popupClose = document.querySelector('.popup__close'),
     button = document.querySelector('.popup__submit'),
     popup = document.querySelector('.popup');
 
@@ -12,8 +12,8 @@ let popupOpen = document.querySelector('.profile__edit_btn'),
      let nameTitle = document.querySelector('.profile__title'),
          nameParagraf = document.querySelector('.profile__paragraf'),
          form = document.querySelector('.popup__text'),
-        formInput = document.querySelector('.popup__text_paragrah'),
-        formactiviti = document.querySelector('.popup__text_paragrah-activ');
+        formInput = document.querySelector('.popup__paragrah'),
+        formactiviti = document.querySelector('.popup__paragrah-activ');
  function click (e) {
     e.preventDefault();
     let nameValue = formInput.value;
