@@ -1,0 +1,9 @@
+.elemeny__vector {
+    max-height: 19px;
+}
+.elemeny__vector:hover{
+    opacity: 0.5;
+}
+.elemeny__vector:active{
+    background-image: url(/images/Unionblac.png);
+}

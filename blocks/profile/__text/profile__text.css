@@ -1,0 +1,14 @@
+.profile__text {
+    max-width: 336px;
+    min-height: 73px;
+    padding-left: 30px;
+    padding-right: 18px;
+    color: white;
+}
+@media screen and (max-width:611px){
+    .profile__text{
+        width: 90%;
+        padding-top: 22.25px;
+        padding-bottom: 36px;
+    }
+}
