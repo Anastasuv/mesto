@@ -12,7 +12,7 @@ let formactiviti = document.querySelector('.popup__paragrah-activ');
       function OpenButton() {
         popup.classList.add('popup_opened');
         formInput.value = nameTitle.textContent;
-        formactiviti.value = nameParagraf.textContent;
+        formactiviti.value = nameParagraf.textContent; // открытие popup
      }
 
      function CloseButton() {
