@@ -9,5 +9,6 @@
     .elements{
         width: 90%;
         justify-content: center;
+        margin:  36px auto 0;
     }
 }

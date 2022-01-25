@@ -2,15 +2,17 @@
     position: absolute;
     right: -40px;
     top: -41px;
+    background-color: transparent;
+    border: none;
+}
+.popup__close:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 @media screen and (max-width:400px){
-    .popup__container_close{
+    .popup__close{
         max-width: 20px;
         top: -36px;
         right: -1px;
     }
-}
-.popup__container_close:hover{
-    opacity: 0.6;
-    cursor: pointer;
 }

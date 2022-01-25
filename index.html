@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,60 +11,77 @@
 <body>
     <div class="page">
         <header class="header">
-            <img class="logo" src="./images/Vector.png" alt="logo">
-            <div class="header__border"></div>
+            <img class="logo" src="./images/Vector.png" alt="лого">
         </header>
         <section class="profile">
             <div class="profile__info">
-                <img class="profile__avatar" src="./images/image.jpg" alt="logo">
+                <img class="profile__avatar" src="./images/image.svg" alt="лого">
                 <div class="profile__text">
-                    <h1 class="profile__title">Жак-Ив Кусто <button  type="reset" class="profile__edit"></button></h1>
-                    <p class="profile__paragraf">Исследователь океана</p>
-                </div>
+                    <div class="profile__container">
+                    <h1 class="profile__title">Жак-Ив Кусто </h1>
+                        <button  aria-label="oppend" type="reset" class="profile__edit">
+                            <img class="profile__edit-img" src="./images/Vector02.svg" alt="вектор">
+                        </button>
+                    
+                </div>  
+                <p class="profile__paragraf">Исследователь океана</p>
             </div>
-            <button type="submit" class="profile__add"></button>
+            </div>
+            <button aria-label="close" type="submit" class="profile__add"></button>
         </section>
         <section class="elements">
             <div class="element">
-                <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="castle">
+                <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="замок">
                 <div class="element__text">
-                    <p class="element__paragraf">Карачаевск</p>
-                    <img class="element__vector" src="./images/like.png" alt="like">
+                    <h2 class="element__paragraf">Карачаевск</h2>
+                    <button type="button" class="element__vector active">
+                    <img  src="./images/Vector (Stroke).svg" alt="нравится">
+                </button>
                 </div>
             </div>
             <div class="element">
-                <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="desert">
+                <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="пустыня">
                 <div class="element__text">
-                    <p class="element__paragraf">Гора Эльбрус</p>
-                    <img class="element__vector" src="./images/like.png" alt="like">
+                    <h2 class="element__paragraf">Гора Эльбрус</h2>
+                    <button type="button" class="element__vector active"> 
+                    <img  src="./images/Vector (Stroke).svg" alt="нравится">
+                </button>
                 </div>
             </div>
             <div class="element">
-                <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="mountain">
+                <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="горы">
                 <div class="element__text">
-                    <p class="element__paragraf">Домбай</p>
-                    <img class="element__vector" src="./images/like.png" alt="like">
+                    <h2 class="element__paragraf">Домбай</h2>
+                    <button type="button" class="element__vector active">
+                    <img  src="./images/Vector (Stroke).svg" alt="нравится">
+                </button>
                 </div>
             </div>
             <div class="element">
-                <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="desert">
+                <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="пустыня">
                 <div class="element__text">
-                    <p class="element__paragraf">Гора Эльбрус</p>
-                    <img class="element__vector" src="./images/like.png" alt="like">
+                    <h2 class="element__paragraf">Гора Эльбрус</h2>
+                    <button type="button" class="element__vector active"> 
+                    <img src="./images/Vector (Stroke).svg" alt="нравится">
+                </button>
                 </div>
             </div>
             <div class="element">
-                <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="mountain">
+                <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="горы">
                 <div class="element__text">
-                    <p class="element__paragraf">Домбай</p>
-                    <img class="element__vector" src="./images/like.png" alt="like">
+                    <h2 class="element__paragraf">Домбай</h2>
+                    <button type="button" class="element__vector active"> 
+                        <img src="./images/Vector (Stroke).svg" alt="нравится">
+                    </button>
                 </div>
             </div>
             <div class="element">
-                <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="castle">
+                <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="замок">
                 <div class="element__text">
-                    <p class="element__paragraf">Карачаево-Черкесия</p>
-                    <img class="element__vector" src="./images/like.png" alt="like">
+                    <h2 class="element__paragraf">Карачаево-Черкесия</h2>
+                    <button type="button" class="element__vector active"> 
+                        <img src="./images/Vector (Stroke).svg" alt="нравится">
+                    </button>
                 </div>
             </div>
         </section>
@@ -73,16 +90,18 @@
         </footer>
     </div>
     <div class="popup">
-        <div class="popup__container">
-            <form class="popup__text" action="/">
-                <h2 class="popup__title">Редактировать профиль</h2>
-                <input type="text" class="popup__paragrah" value="Жак-Ив Кусто"/>
-                <input type="text" class="popup__paragrah-activ" value="Исследователь океана"/>
+        <div class="popup__container"> 
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <form class="popup__text" action="/" name="popup">
+                <input type="text" class="popup__paragrah"   value=""/>
+                <input type="text" class="popup__paragrah-activ" value=""/>
                 <button  type="submit" class="popup__submit">Сохранить</button>
-                <a href="#"><img class="popup__close" src="./images/Clos_Icon.png" alt="close"></a>
             </form>
+            <button type="button" class="popup__close" >
+                <img src="./images/Clos_Icon.png" alt="закрыть">
+            </button>
         </div>
     </div>
-    <script src="./script/main.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>

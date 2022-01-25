@@ -1,0 +1,14 @@
+.profile__edit-img{
+    max-width: 10px;
+    height: 10px;
+    text-align: center;
+  
+}
+@media screen and (max-width:320px){
+    .profile__edit-img{
+        max-width: 7,5px;
+        min-height: 7,5px;
+        padding: 5px;
+    }
+
+}

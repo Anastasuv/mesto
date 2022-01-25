@@ -6,9 +6,10 @@
     justify-content: space-between;
     margin: 0 auto 0;
     align-items: flex-start;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 @media screen and (max-width:880px) {
     .header{
-        width: 90%;
+        min-height: 53px;
     }
 }

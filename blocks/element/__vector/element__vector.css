@@ -1,9 +1,10 @@
 .element__vector {
     max-height: 19px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
 }
 .element__vector:hover{
     opacity: 0.5;
-}
-.element__vector:active{
-    background-image: url(/images/Unionblac.png);
+    cursor:pointer
 }
