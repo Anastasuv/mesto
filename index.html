@@ -11,7 +11,7 @@
 <body>
     <div class="page">
         <header class="header">
-            <img class="logo" src="./images/Vector.png" alt="лого">
+            <img class="logo" src="./images/Vector.svg" alt="лого">
         </header>
         <section class="profile">
             <div class="profile__info">
@@ -19,7 +19,7 @@
                 <div class="profile__text">
                     <div class="profile__container">
                     <h1 class="profile__title">Жак-Ив Кусто </h1>
-                        <button  aria-label="oppend" type="reset" class="profile__edit">
+                        <button  aria-label="oppend" type="button" class="profile__edit">
                             <img class="profile__edit-img" src="./images/Vector02.svg" alt="вектор">
                         </button>
                     
@@ -27,14 +27,14 @@
                 <p class="profile__paragraf">Исследователь океана</p>
             </div>
             </div>
-            <button aria-label="close" type="submit" class="profile__add"></button>
+            <button aria-label="close" type="button" class="profile__add"></button>
         </section>
         <section class="elements">
             <div class="element">
                 <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="замок">
                 <div class="element__text">
                     <h2 class="element__paragraf">Карачаевск</h2>
-                    <button type="button" class="element__vector active">
+                    <button type="button" class="element__vector element__vector_active">
                     <img  src="./images/Vector_(Stroke).svg" alt="нравится">
                 </button>
                 </div>
@@ -43,7 +43,7 @@
                 <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="пустыня">
                 <div class="element__text">
                     <h2 class="element__paragraf">Гора Эльбрус</h2>
-                    <button type="button" class="element__vector active"> 
+                    <button type="button" class="element__vector element__vector_active"> 
                     <img  src="./images/Vector_(Stroke).svg" alt="нравится">
                 </button>
                 </div>
@@ -52,7 +52,7 @@
                 <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="горы">
                 <div class="element__text">
                     <h2 class="element__paragraf">Домбай</h2>
-                    <button type="button" class="element__vector active">
+                    <button type="button" class="element__vector element__vector_active">
                     <img  src="./images/Vector_(Stroke).svg" alt="нравится">
                 </button>
                 </div>
@@ -61,7 +61,7 @@
                 <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="пустыня">
                 <div class="element__text">
                     <h2 class="element__paragraf">Гора Эльбрус</h2>
-                    <button type="button" class="element__vector active"> 
+                    <button type="button" class="element__vector element__vector_active"> 
                     <img src="./images/Vector_(Stroke).svg" alt="нравится">
                 </button>
                 </div>
@@ -70,7 +70,7 @@
                 <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="горы">
                 <div class="element__text">
                     <h2 class="element__paragraf">Домбай</h2>
-                    <button type="button" class="element__vector active"> 
+                    <button type="button" class="element__vector element__vector_active"> 
                         <img src="./images/Vector_(Stroke).svg" alt="нравится">
                     </button>
                 </div>
@@ -79,7 +79,7 @@
                 <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="замок">
                 <div class="element__text">
                     <h2 class="element__paragraf">Карачаево-Черкесия</h2>
-                    <button type="button" class="element__vector active"> 
+                    <button type="button" class="element__vector element__vector_active"> 
                         <img src="./images/Vector_(Stroke).svg" alt="нравится">
                     </button>
                 </div>
@@ -93,8 +93,8 @@
         <div class="popup__container"> 
             <h2 class="popup__title">Редактировать профиль</h2>
             <form class="popup__text" action="/" name="popup">
-                <input type="text" class="popup__paragrah"   value=""/>
-                <input type="text" class="popup__paragrah-activ" value=""/>
+                <input type="text" class="popup__paragrah popup__paragrah_name" value=""/>
+                <input type="text" class="popup__paragrah popup__paragrah_activ" value=""/>
                 <button  type="submit" class="popup__submit">Сохранить</button>
             </form>
             <button type="button" class="popup__close" >

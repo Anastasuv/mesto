@@ -5,31 +5,31 @@ let button = document.querySelector('.popup__submit');
 let nameTitle = document.querySelector('.profile__title');
 let nameParagraf = document.querySelector('.profile__paragraf');
 let form = document.querySelector('.popup__text');
-let formInput = document.querySelector('.popup__paragrah');
-let formactiviti = document.querySelector('.popup__paragrah-activ');
+let formInput = document.querySelector('.popup__paragrah_name');
+let formactiviti = document.querySelector('.popup__paragrah_activ');
 
 
-      function OpenButton() {
-        popup.classList.add('popup_opened');
+      function openButton() {
         formInput.value = nameTitle.textContent;
-        formactiviti.value = nameParagraf.textContent; // открытие popup
+        formactiviti.value = nameParagraf.textContent;
+        popup.classList.add('popup_opened'); // открытие popup
      }
 
-     function CloseButton() {
+     function closeButton() {
         popup.classList.remove('popup_opened'); // закрытие popup
     }
     
- function click (e) {
+ function clickSaveinput (e) {
     e.preventDefault();
     let nameValue = formInput.value;
     let activitiValue = formactiviti.value;
     nameTitle.textContent = nameValue;
     nameParagraf.textContent = activitiValue;
-    CloseButton();
+    closeButton();
  }
 
-popupOpen.addEventListener('click', OpenButton);
-popupClose.addEventListener('click', CloseButton);
-form.addEventListener('submit', click);
+popupOpen.addEventListener('click', openButton);
+popupClose.addEventListener('click', closeButton);
+form.addEventListener('submit', clickSaveinput);
 
 

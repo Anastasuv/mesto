@@ -1,16 +1,12 @@
-.popup__paragrah {
-    font-family: "Inter", "Arial ", sans-serif;
+.popup__paragrah-activ{
+    font-family: 'Inter',"Arial ", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     display: block;
+    padding: 13px 0;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     outline: none;
-    margin-bottom: 30px;
-    padding: 0  0 13px;
-    
-
-
 }
