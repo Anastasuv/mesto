@@ -5,8 +5,8 @@ let button = document.querySelector('.popup__submit');
 let nameTitle = document.querySelector('.profile__title');
 let nameParagraf = document.querySelector('.profile__paragraf');
 let form = document.querySelector('.popup__text');
-let formInput = document.querySelector('.popup__paragrah_name');
-let formactiviti = document.querySelector('.popup__paragrah_activ');
+let formInput = document.querySelector('.popup__paragrah_type_name');
+let formactiviti = document.querySelector('.popup__paragrah_type_activ');
 
 
       function openButton() {

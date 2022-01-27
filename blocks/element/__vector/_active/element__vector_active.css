@@ -3,3 +3,7 @@
     cursor:pointer;
     background-repeat: no-repeat;
 }
+.element__vector_active:focus{
+    background-image: url(../../../../images/Union.svg);
+    
+}
