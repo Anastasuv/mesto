@@ -1,0 +1,12 @@
+.element__card-del{
+    position: absolute;
+    right:26px;
+    top: 26px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.element__card-del:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}

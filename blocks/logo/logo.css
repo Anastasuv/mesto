@@ -1,6 +1,7 @@
 .logo{
     position: relative;
     max-width: 142px;
+    
 }
 @media screen and (max-width:320px) {
     .logo{
