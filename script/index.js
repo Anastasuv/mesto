@@ -49,8 +49,7 @@ let textImg = document.querySelector('.text__img');
 let textTitle = document.querySelector('.popup__title')
 let popupImageItem = document.querySelector('.popup__group-item');
 let elements = document.querySelector('.elements');
-let template = document.querySelector('.template').content;
-let elementClone = document.querySelector('.element');
+let elementClone = document.querySelector('.element').content;
 let article = document.querySelector('.element__template');
 
 
@@ -81,49 +80,44 @@ const initialCards = [
   }
 ];
 
-function render() {
-  initialCards.forEach(renderTemplete);
+function render () {
+  initialCards.forEach(createCard);
 }
-
-function renderTemplete (element) {
-  const newtemplate = template.cloneNode(true);
-  elements.append(newtemplate);
-  newtemplate.querySelector('.element__group-card').addEventListener('click', function(event){
-    popupModal.classList.toggle('popup__open-img');
+function renderCards (element) {                                       //Добавление эл-ов на стр. при загрузке
+  const cardElement = elementClone.cloneNode(true);                        
+  cardElement.querySelector('.element__paragraf').textContent = element.name;
+  cardElement.querySelector('.element__group').src = element.link;
+  cardElement.querySelector('.element__group').alt = element.name;
+  cardElement.querySelector('.element__group-card').addEventListener('click', function(event){
+    popupModal.classList.toggle('popup__opened');
     popupImageItem.src = element.link;
     textImg.textContent = element.name;
     popupImageItem.alt = element.name;
   });
 
-  likeIkon(newtemplate);
-  elements.append(newtemplate);
+  addListeners(cardElement);
+  sectionElements.append(cardElement);
+}
+// создание новой карточки
 
+function LikeToButton (button) {
+  button.target.classList.toggle('element__vector_active');
+}
+function DeletoButton (button){
+  button.target.closest('.element__vector');
 }
 
-function likeIkon (e) {
-  e.querySelector('.element__vector').addEventListener ('click', like);
-}
-function like (event){
-  event.target.classList.toggle('element__vector_active');
-}
-
- function openCard(){
+ function openPopupCard(){
   popupCard.classList.toggle('popup_opened');// открытие popup (+)
 }
-function closeCard(){
+function closePopupCard(){
   popupCard.classList.toggle('popup_opened'); //закрытие popup (+)
 }
 
-function activeImg(){
-  popupModal.classList.toggle('popup_opened');// открытие img
-}
-function defoltImg(){
-  popupModal.classList.toggle('popup_opened');// закрытие img
-}
 
 
-openCardpopup.addEventListener ('click', openCard); 
-closeIconButton.addEventListener('click', closeCard);
-buttonCard.addEventListener('click', activeImg);
-closeImg.addEventListener('click', defoltImg);
+
+openCardpopup.addEventListener ('click', openPopupCard); //openCardpopup-здесь задаем элемент на который нажимаем и появляется popup
+closeIconButton.addEventListener('click', closePopupCard);
+
 
