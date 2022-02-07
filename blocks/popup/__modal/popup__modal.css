@@ -1,6 +1,7 @@
 .popup__modal{
+    position: fixed;
     width: 100%;
-    height: 282px;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -8,7 +9,6 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    position: fixed;
     visibility: hidden;
     transition: opacity .3s, visibility 0s, linear, .4s;
 }
