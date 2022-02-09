@@ -203,7 +203,7 @@ closeNewCard_Btn.addEventListener('click', () => addNewCard_Div.classList.toggle
 
 
 
-const popupModalCloseBtn = document.querySelector('.popup__close_img');
+const popupModalCloseBtn = document.querySelector('.popup__close-img');
 popupModalCloseBtn.addEventListener('click', ()=>{popupModal.classList.toggle('popup__open-img')});
 
 
