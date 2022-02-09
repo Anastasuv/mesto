@@ -138,7 +138,7 @@ function createCardFromTemplate(element) {
 
 
 let big_img = document.querySelector('.popup__group-item');
-let textImg = document.querySelector('.text__img');
+
 // Добавление HTML-карточки в тело документа:
 function inflateCard(cardArrayElement) {
 
@@ -151,6 +151,8 @@ function inflateCard(cardArrayElement) {
   // Вешаем обработчик события на изображение карточки для показа полного изображения:
   newCard.querySelector('.element__group').addEventListener('click', ()=>{
     big_img.src = cardArrayElement.link;
+    let textImg = document.querySelector('.text__img');
+    textImg .textContent = cardArrayElement.name;
     popupModal.classList.toggle('popup__open-img');
   });   //открытие картинки
 
