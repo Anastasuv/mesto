@@ -55,7 +55,7 @@ const elementClone = document.querySelector('.element');
 const article = document.querySelector('.element__template');
 
 // Получение элемента-контейнера Div, внутри которого будет изображение в оригинале (класс для картинки: popup__open-img): 
-const popupModal = document.querySelector('.popup__modal'); // form
+const popupModal = document.querySelector('.popup-modal'); // form
 
 const elmentIkon = document.querySelectorAll('.element__vector');
 // const delImg = document.querySelector('.element__card-del');
@@ -151,7 +151,7 @@ function inflateCard(cardArrayElement) {
   // Вешаем обработчик события на изображение карточки для показа полного изображения:
   newCard.querySelector('.element__group').addEventListener('click', ()=>{
     big_img.src = cardArrayElement.link;
-    let textImg = document.querySelector('.text__img');
+    let textImg = document.querySelector('.text-img');
     textImg .textContent = cardArrayElement.name;
     popupModal.classList.toggle('popup__open-img');
   });   //открытие картинки
