@@ -46,7 +46,7 @@
 @import url(../blocks/popup/__group-img/popup__group-img.css);
 @import url(../blocks/popup/__group-item/popup__group-item.css);
 @import url(../blocks/popup/__close-img/popup__close-img.css);
-@import url(../blocks/popup/__container-modal/popup__modal-container.css);
+@import url(../blocks/popup/__modal/__container/popup-modal__container.css);
 @import url(../blocks/popup/__modal/popup__modal.css);
 @import url(../blocks/popup/__open-img/popup__open-img.css);
 @import url(../blocks/text/text__img.css);
