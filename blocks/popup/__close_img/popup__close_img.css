@@ -1,0 +1,12 @@
+.popup__close_img{
+    background-image: url(../../../images/Clos_Icon.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -50px;
+    right: -50px;
+}

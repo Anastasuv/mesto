@@ -10,10 +10,15 @@
 </head>
 
 <body>
+    
     <div class="page">
+        
         <header class="header">
             <img class="logo" src="./images/logo.svg" alt="лого">
         </header>
+        
+
+
         <section class="profile">
             <div class="profile__info">
                 <img class="profile__avatar" src="./images/image.svg" alt="лого">
@@ -27,94 +32,31 @@
                     <p class="profile__paragraf">Исследователь океана</p>
                 </div>
             </div>
+
+            <!-- Кнопка добавления карточки -->
             <button aria-label="close" type="button" class="profile__add"></button>
         </section>
-     <section class="elements">
-         <div class="element">
-                <div class="element__group-img">
-                <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="замок">
-            </div>
-                <div class="element__text">
-                    <h2 class="element__paragraf">Карачаевск</h2>
-                    <button type="button" aria-label="like" class="element__vector">
-                        
-                    </button>
-                    <button class="element__card-del" aria-label="close" type="button" >
-                        <img src="./images/Group.svg" alt="корзина">
-                    </button>
-                </div>
-            </div>
-            <div class="element">
-                <div class="element__group-img">
-                <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="пустыня">
-                </div>
-                <div class="element__text">
-                    <h2 class="element__paragraf">Гора Эльбрус</h2>
-                    <button type="button"  aria-label="like" class="element__vector"></button>
-                    <button class="element__card-del" aria-label="close" type="button" >
-                        <img src="./images/Group.svg" alt="корзина">
-                    </button>
-                </div>
-            </div>
-            <div class="element">
-                <div class="element__group-img">
-                <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="горы">
-            </div>
-                <div class="element__text">
-                    <h2 class="element__paragraf">Домбай</h2>
-                    <button type="button" aria-label="like" class="element__vector">
-                        
-                    </button>
-                    <button class="element__card-del" aria-label="close" type="button" >
-                        <img src="./images/Group.svg" alt="корзина">
-                    </button>
-                </div>
-            </div>
-            <div class="element">
-                <div class="element__group-img">
-                <img class="element__group" src="./images/kirill-pershin-1404681-unsplash.png" alt="пустыня">
-                </div>
-                <div class="element__text">
-                    <h2 class="element__paragraf">Гора Эльбрус</h2>
-                    <button type="button" aria-label="like" class="element__vector">
-                        
-                    </button>
-                    <button class="element__card-del" aria-label="close" type="button" >
-                        <img src="./images/Group.svg" alt="корзина">
-                    </button>
-                </div>
-            </div>
-            <div class="element">
-                <div class="element__group-img">
-                <img class="element__group" src="./images/kirill-pershin-1556355-unsplash.png" alt="горы">
-                </div>
-                <div class="element__text">
-                    <h2 class="element__paragraf">Домбай</h2>
-                    <button type="button" aria-label="like" class="element__vector"></button>
-                    <button class="element__card-del" aria-label="close" type="button" >
-                        <img src="./images/Group.svg" alt="корзина">
-                    </button>
-                </div>
-            </div>
-            <div class="element">
-                <div class="element__group-img">
-                <img class="element__group" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="замок">
-                </div>
-                <div class="element__text">
-                    <h2 class="element__paragraf">Карачаево-Черкесия</h2>
-                    <button type="button" aria-label="like" class="element__vector">
-                       
-                    </button>
-                    <button class="element__card-del" aria-label="close" type="button" >
-                        <img src="./images/Group.svg" alt="корзина">
-                    </button>
-                </div>
-            </div>
+
+
+        <section class="elements">
+            <!-- Матрица карточек  -->
+
+
         </section>
         <footer class="footer">
             <p class="footer__title"> &copy; 2020 Mesto Russia</p>
         </footer>
+
+
+
+
+
+
+
+
     </div>
+
+    <!-- Всплывающая форма редактирования профиля -->
     <div class="popup ">
         <div class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
@@ -130,46 +72,60 @@
         </div>
     </div>
 
+
+    <!-- Всплывающая форма создания новой карточки -->
     <div class="popup popup_card">
         <div class="popup__container">
             <h2 class="popup__title">Новое место</h2>
-            <form class="popup__text" action="/" name="open">
-                <input class="popup__paragrah popup__paragrah_type_card" placeholder="Название" type="text" value="" />
-                <input class="popup__paragrah popup__paragrah_type_card-link" placeholder="Ссылка на картинку" type="text" value="" />
-                <button type="submit" class="popup__submit">Создать</button>
-            </form>
+            <!-- <form class="popup__text" action="/" name="open"> -->
+                <div class="popup__text">
+                    <input class="popup__paragrah popup__paragrah_type_card" placeholder="Название" type="text" value="" />
+                    <input class="popup__paragrah popup__paragrah_type_card-link" placeholder="Ссылка на картинку"
+                        type="text" value="" />
+                    <!-- <button type="submit" class="popup__submit">Создать</button> -->
+                    <button class="popup__submit" onclick="add_new_card()">Создать</button>
+                </div>
+            <!-- </form> -->
             <button type="button" class="popup__close popup__close_card">
                 <img class="popup__close-icon" src="./images/Clos_Icon.png" alt="закрыть">
             </button>
         </div>
     </div>
 
-    <div class=" popup popup__modal">
+
+    <!-- Тут появляется изображение при клике на карточку -->
+    <div class="popup__modal" >
         <div class="popup__container-modal">
-            <figure class="popup__group-img">
-                <img class='popup__group-item' src="#" alt="">
-            <figuration class="text__img"></figuration>
-            </figure>
-            <button type="button" class="popup__close_img">
-                <img class="popup__open-img" src="./images/Clos_Icon.png" alt="закрыть">
-            </button>
-        </div>
-    </div>
-    
-    <template class="template">
-        <div class="element element__template">
-            <div class="element__group-card">
-          <img class ="element__group" src="#" alt="">
+            <div class="popup__group-img">
+                <img class='popup__group-item' src="#" alt="картинки">
+                 <figuration class="text__img"></figuration> 
             </div>
-          <div class="element__text">
-              <h2 class="element__paragraf"></h2>
-              <button type="button" aria-label="like" class="element__vector"></button>
-              <button type="button" aria-label="del" class="element__card-del" > <img src="./images/Group.svg" alt="корзина">
-              </button>
-          </div>
+
+            <button type="button" class="popup__close_img"></button>
+        
         </div>
+            
+        <div class="popup__open-img"></div> 
+    </div>
+
+
+    <!-- Шаблон элемента -->
+    <template class="template">
+        <article class="element element__template">
+            <div class="element__group-img"></div>
+                <img class="element__group" src="#" alt="">
+            </div>
+            <div class="element__text">
+                <h2 class="element__paragraf"></h2>
+                <button type="button" aria-label="like" class="element__vector"></button>
+                <button type="button" aria-label="del" class="element__card-del"> <img src="./images/Group.svg"
+                        alt="корзина">
+                </button>
+            </div>
+        </article>
     </template>
-    
+
+
     <script src="./script/index.js"></script>
 </body>
 

@@ -44,9 +44,11 @@
 @import url(../blocks/popup/__paragrah/popup__paragrah.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
-@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__group-img/popup__group-img.css);
+@import url(../blocks/popup/__group-item/popup__group-item.css);
+@import url(../blocks/popup/__close_img/popup__close_img.css);
 @import url(../blocks/popup/__container-modal/popup__container-modal.css);
 @import url(../blocks/popup/__modal/popup__modal.css);
 @import url(../blocks/popup/__open-img/popup__open-img.css);
-
+@import url(../blocks/text/text__img.css);
 
