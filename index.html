@@ -57,7 +57,7 @@
     </div>
 
     <!-- Всплывающая форма редактирования профиля -->
-    <div class="popup ">
+    <div class="popup profile-popup">
         <div class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
             <form class="popup__text" action="/" name="popup">
@@ -83,7 +83,7 @@
                     <input class="popup__paragrah popup__paragrah_type_card-link" placeholder="Ссылка на картинку"
                         type="text" value="" />
                     <!-- <button type="submit" class="popup__submit">Создать</button> -->
-                    <button class="popup__submit" onclick="add_new_card()">Создать</button>
+                    <button class="popup__submit" onclick="addNewCard()">Создать</button>
                 </div>
             <!-- </form> -->
             <button type="button" class="popup__close popup__close_card">
@@ -101,7 +101,7 @@
                 <img class='popup__group-item' src="#" alt="картинки">
                  <h2 class="text-img"></h2> 
             </div>
-            <button type="button" class="popup__close-img"></button>
+            <img type="button" class="popup__close popup__close-img" src="./images/Clos_Icon.png">
         </div>
         <div class="popup__open-img"></div> 
     </div>
